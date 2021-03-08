@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "bfaa_submission_1"
