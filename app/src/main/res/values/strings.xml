@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">bfaa_submission_1</string>
+    <string name="username">Username</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="list_github_user">List Github Users</string>
+    <string name="imageuserphoto">imageUserPhoto</string>
+    <string name="imgUserPhoto">imgUserPhoto</string>
+    <string name="umgUserDetail">imgUserDetail</string>
+    <string name="detail_information">Detail Information</string>
+    <string name="name">Name :</string>
+    <string name="usernameInfo">Username :</string>
+    <string name="aditiya_prayogo">Aditiya Prayogo</string>
+    <string name="companyInfo">Company :</string>
+    <string name="repositoryInfo">Repository :</string>
+    <string name="dummyNumberData">9999</string>
+    <string name="locationInfo">Location :</string>
+    <string name="followerInfo">Follower :</string>
+    <string name="followingInfo">Following :</string>
 </resources>

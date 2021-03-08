@@ -3,7 +3,7 @@ package com.aditprayogo.bfaa_submission_1.data
 import com.aditprayogo.bfaa_submission_1.R
 
 object UserData {
-    private val userData : List<User> = listOf(
+    val userData: List<User> = listOf(
         User(
             username = "JakeWharton",
             name = "Jake Wharton",

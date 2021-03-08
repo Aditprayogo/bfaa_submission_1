@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".ui.detail.DetailActivity">
+
+    <ImageView
+        android:id="@+id/imgPhotoDetailUser"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:contentDescription="@string/umgUserDetail"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/imgUserPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="300dp"
+                android:background="@drawable/bg_card_white"
+                android:paddingBottom="@dimen/dimes16"
+                android:paddingStart="@dimen/dimes16"
+                android:paddingEnd="@dimen/dimes16"
+                android:paddingTop="@dimen/dimes25">
+
+                <View
+                    android:id="@+id/viewInfo"
+                    android:background="@color/yellow"
+                    android:layout_width="5dp"
+                    android:layout_height="27dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimes16"
+                    android:text="@string/detail_information"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/viewInfo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/viewInfo" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimes16"
+                    android:layout_marginBottom="@dimen/dimes16"
+                    app:layout_constraintTop_toBottomOf="@id/viewInfo"
+                    app:layout_constraintStart_toStartOf="@id/viewInfo"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimens8">
+
+                        <TextView
+                            android:id="@+id/txtNameInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            tools:text="@string/aditiya_prayogo"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/dimens8"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimens8">
+
+                        <TextView
+                            android:id="@+id/txtUsernameInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/usernameInfo"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            tools:text="@string/aditiya_prayogo"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/dimens8"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimens8">
+
+                        <TextView
+                            android:id="@+id/txtCompanyInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/companyInfo"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            tools:text="@string/company"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/dimens8"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimens8">
+
+                        <TextView
+                            android:id="@+id/txtLocationInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/locationInfo"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            tools:text="@string/location"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/dimens8"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimens8">
+
+                        <TextView
+                            android:id="@+id/txtRepositoryInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/repositoryInfo"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtRepository"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            tools:text="@string/dummyNumberData"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/dimens8"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimens8">
+
+                        <TextView
+                            android:id="@+id/txtFollowerInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/followerInfo"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtFollower"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            tools:text="@string/dummyNumberData"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/dimens8"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimens8">
+
+                        <TextView
+                            android:id="@+id/txtFollowingInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/followingInfo"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtFollowing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            tools:text="@string/dummyNumberData"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/dimens8"
+                            />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

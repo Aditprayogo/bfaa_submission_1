@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.aditprayogo.bfaa_submission_1"
-        minSdkVersion 16
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -53,4 +53,6 @@ dependencies {
     kapt "com.github.bumptech.glide:compiler:$glide_version"
 
     implementation "com.airbnb.android:lottie:$lottie_version"
+
+    implementation 'androidx.palette:palette-ktx:1.0.0'
 }
