@@ -55,4 +55,6 @@ dependencies {
     implementation "com.airbnb.android:lottie:$lottie_version"
 
     implementation 'androidx.palette:palette-ktx:1.0.0'
+
+    implementation "com.airbnb.android:lottie:$lottie_version"
 }

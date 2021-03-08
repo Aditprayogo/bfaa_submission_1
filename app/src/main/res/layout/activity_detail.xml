@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="@color/colorPrimary"
     tools:context=".ui.detail.DetailActivity">
 
     <ImageView
@@ -42,7 +42,7 @@
 
                 <View
                     android:id="@+id/viewInfo"
-                    android:background="@color/yellow"
+                    android:background="@color/colorSecondary"
                     android:layout_width="5dp"
                     android:layout_height="27dp"
                     app:layout_constraintStart_toStartOf="parent"
